@@ -1,26 +1,9 @@
-const app = {
-init: () => {
+let button = document.querySelector("button");
+document.getElementById("btnGet")
+document.addEventListener("click","");
 
-    document
-    .getElementById("btnGet")
-    .addEventListener("click", app.fetchWeather);
-}
-fetchWeather: (ev) => {...
-},
-};
-
-
-
-const departInput = document.getElementById("travelInitialInput");
-const arriveInput = document.getElementById("travelDestinationInput");
-
-departInputString = departInput.toString();
-arriveInputString = arriveInput.toString();
-
-
-
-const button = document.querySelector("button");
-
+let departInput = document.getElementById("travelInitialInput");
+let arriveInput = document.getElementById("travelDestinationInput");
 
 
 
