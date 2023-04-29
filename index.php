@@ -8,4 +8,4 @@ $dotenv = Dotenv::createImmutable(__DIR__);
 $dotenv->load();
 
 $weatherApiKey = getenv("WEATHER_API_KEY");
-$googleApiKey = getenv("LOCATION_API_KEY");
+$locationApiKey = getenv("LOCATION_API_KEY");
