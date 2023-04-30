@@ -4,7 +4,6 @@
   "description": "Ever wonder what motorcycle gear to wear on your ride?",
   "main": "/src/script.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
     "serve": "webpack-dev-server --mode=development",
     "deploy": "npm run build"

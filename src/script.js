@@ -1,4 +1,10 @@
-console.log(process.env.WEATHER_API_KEY);
+
+//const button = document.querySelector("button")
+//button.addEventListener("click", e => {
+//  console.log(e)
+//}),
+
+console.log(process.env.WEATHER_API_KEY)
 
 
 
@@ -8,9 +14,9 @@ console.log(process.env.WEATHER_API_KEY);
 
 
 
-//let button = document.querySelector("button");
+//let button = document.querySelector("button"); // returns first element of specified selector
 //document.getElementById("btnGet")
-//document.addEventListener("click","");
+//document.addEventListener("click",""); 
 
 //let departInput = document.getElementById("travelInitialInput");
 //let arriveInput = document.getElementById("travelDestinationInput");
