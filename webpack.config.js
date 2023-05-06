@@ -1,7 +1,8 @@
 const path = require('path')
 const webpack = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-const Dotenv = require('dotenv-webpack')
+const dotenv = require('dotenv').config()
+const isDevelopment = process.env.NODE_ENV !== 'production'
 
 module.exports = {
     mode: 'development',
@@ -35,12 +36,15 @@ module.exports = {
             hot: true
         },
     plugins: [
+        new webpack.DefinePlugin({
+            'process.env': JSON.stringify(dotenv.parsed),
+            'process.env.NODE_ENV': JSON.stringify(isDevelopment ? 'development' : 'production'),
+          }),
         new webpack.HotModuleReplacementPlugin(),
         new HtmlWebpackPlugin({
             template: 'src/index.html',
             filename: 'index.html',
             inject: 'body',
         }),
-        new Dotenv()
-    ]
+    ].filter(Boolean),
 }
