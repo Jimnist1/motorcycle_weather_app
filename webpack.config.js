@@ -6,7 +6,7 @@ const isDevelopment = process.env.NODE_ENV !== 'production'
 
 module.exports = {
     mode: 'development',
-    entry: './src/script.js',
+    entry: ['./src/script.js','./src/weatherapi.js'],
     output: {
         filename: 'bundle.js',
         path: path.resolve(__dirname, 'dist')
